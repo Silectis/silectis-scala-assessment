@@ -1,0 +1,5 @@
+# scala
+target/
+
+# IntelliJ
+.idea/
