@@ -4,13 +4,11 @@ This repository contains a Scala assessment for Silectis Platform Engineer appli
 
 ## Assessment Instructions
 
-The purpose of this application is to accept a SQL query via an HTTP request, parse and validate 
-the query, and audit which table and columns are being accessed by the query.
+The purpose of this application is to accept a SQL query via an HTTP request, parse the query,
+and audit which table and columns are being accessed by the query.
 
 So far, the SQL parser has been implemented as well as the HTTP server and request handler. Your
-task is to implement the query auditor that will:
- 1. Resolve the referenced table and columns in the query
- 2. Validate the query to ensure that all column references are valid
+task is to implement the query auditor.
 
 ### SQL Parser
 
@@ -93,18 +91,6 @@ should return
 }
 ```
 since it does not reference any named table.
-
-Additionally, the method should return a failure if any column in any part of the query is invalid.
-For example, this query
-```sql
-select col1, col2 from (select col1 from test1) as s
-```
-
-should return failure since `col2` is not present in the subquery `s`.
-
-Note that this validation is only possible for subqueries, since we do not know what columns are
-present in simple tables. Therefore, you can assume that column references to simple tables are
-always valid.
 
 ### Submission
 
