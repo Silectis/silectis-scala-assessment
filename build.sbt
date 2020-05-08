@@ -2,7 +2,7 @@ name := "silectis-scala-assessment"
 organization := "com.silectis"
 version := "0.1.0-SNAPSHOT"
 
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.10"
 
 import Dependencies._
 
