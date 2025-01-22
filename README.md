@@ -96,7 +96,8 @@ since it does not reference any named table.
 
 Clone this repository and work on your solution, committing your changes to your local repository.
 When you are finished, zip the entire project folder, including your local git repository,
-and email it to `recruiting@silect.is`.
+and email it to `recruiting@silect.is`.  Do not fork the repository and do not open a pull request 
+against this repository.
 
 ## Required Software
 
